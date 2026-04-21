@@ -19,8 +19,6 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 interface ThemeProviderProps {
   children: ReactNode;
   defaultTheme?: Theme;
-  /** When true, exposes `toggleTheme` for user-controlled switching */
-  switchable?: boolean;
 }
 
 export function ThemeProvider({
